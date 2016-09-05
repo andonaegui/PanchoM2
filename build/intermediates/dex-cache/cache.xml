@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\rando\AndroidStudioProjects\PanchoM\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="61cd024eac832368d58cadaf2e2535d074d7f517">
+        <dex dex="C:\Users\rando\AndroidStudioProjects\PanchoM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6c2d529b4d789d9f64f95699e36ee6e5377403fc\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\rando\AndroidStudioProjects\PanchoM\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="7bb0e6406c43ac04e5e3fdab06f634a5090f6336">
+        <dex dex="C:\Users\rando\AndroidStudioProjects\PanchoM\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_4b0f96db5acab2743992de469c4f744647075c13\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\rando\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\rando\AndroidStudioProjects\PanchoM\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-19.1.0_b684d2f476091c06b668bde8e6da6c3ca27bce3e\classes.dex" />
+    </item>
+
+</items>
