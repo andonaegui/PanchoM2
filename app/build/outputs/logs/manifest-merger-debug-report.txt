@@ -15,6 +15,10 @@ ADDED from C:\Users\rando\AndroidStudioProjects\PanchoM\app\src\main\AndroidMani
 		INJECTED from C:\Users\rando\AndroidStudioProjects\PanchoM\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\rando\AndroidStudioProjects\PanchoM\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\rando\AndroidStudioProjects\PanchoM\app\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from C:\Users\rando\AndroidStudioProjects\PanchoM\app\src\main\AndroidManifest.xml:6:22-64
 uses-sdk
 ADDED from C:\Users\rando\AndroidStudioProjects\PanchoM\app\src\main\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion

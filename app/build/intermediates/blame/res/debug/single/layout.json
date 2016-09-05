@@ -1,23 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\rando\\AndroidStudioProjects\\PanchoM\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag3_layout.xml",
-        "source": "C:\\Users\\rando\\AndroidStudioProjects\\PanchoM\\app\\src\\main\\res\\layout\\frag3_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\rando\\AndroidStudioProjects\\PanchoM\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag2_layout.xml",
         "source": "C:\\Users\\rando\\AndroidStudioProjects\\PanchoM\\app\\src\\main\\res\\layout\\frag2_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Wolf\\AndroidStudioProjects\\Downloaded\\Dynamic Drawers\\Aleman3.1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag2_layout.xml",
-        "source": "C:\\Users\\Wolf\\AndroidStudioProjects\\Downloaded\\Dynamic Drawers\\Aleman3.1\\app\\src\\main\\res\\layout\\frag2_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\Wolf\\AndroidStudioProjects\\Downloaded\\Dynamic Drawers\\Aleman3.1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag3_layout.xml",
-        "source": "C:\\Users\\Wolf\\AndroidStudioProjects\\Downloaded\\Dynamic Drawers\\Aleman3.1\\app\\src\\main\\res\\layout\\frag3_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\Wolf\\AndroidStudioProjects\\Downloaded\\Dynamic Drawers\\Aleman3.1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag1_layout.xml",
-        "source": "C:\\Users\\Wolf\\AndroidStudioProjects\\Downloaded\\Dynamic Drawers\\Aleman3.1\\app\\src\\main\\res\\layout\\frag1_layout.xml"
+        "merged": "C:\\Users\\rando\\AndroidStudioProjects\\PanchoM\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag3_layout.xml",
+        "source": "C:\\Users\\rando\\AndroidStudioProjects\\PanchoM\\app\\src\\main\\res\\layout\\frag3_layout.xml"
     },
     {
         "merged": "C:\\Users\\rando\\AndroidStudioProjects\\PanchoM\\app\\build\\intermediates\\res\\merged\\debug\\layout\\frag1_layout.xml",
@@ -26,9 +14,5 @@
     {
         "merged": "C:\\Users\\rando\\AndroidStudioProjects\\PanchoM\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_layout.xml",
         "source": "C:\\Users\\rando\\AndroidStudioProjects\\PanchoM\\app\\src\\main\\res\\layout\\main_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\Wolf\\AndroidStudioProjects\\Downloaded\\Dynamic Drawers\\Aleman3.1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_layout.xml",
-        "source": "C:\\Users\\Wolf\\AndroidStudioProjects\\Downloaded\\Dynamic Drawers\\Aleman3.1\\app\\src\\main\\res\\layout\\main_layout.xml"
     }
 ]

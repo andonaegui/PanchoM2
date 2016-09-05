@@ -17,6 +17,19 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
+
+import cz.msebera.android.httpclient.Header;
 //import com.loopj.android.http.*;
 
 
@@ -34,8 +47,9 @@ public class MainActivity extends Activity {
 	public ActionBarDrawerToggle drawertoggle;
 	
 	public ListView drawerlist;
-	public String[] listentxt = {"Angular 1","Angular 2","Angular 3"};
+//	public String[] listentxt = {"Angular 1","Angular 2","Angular 3"};
     private ActionBar actionbar;
+    private ArrayAdapter<String> drawerlistadapter;
 
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,20 +60,61 @@ public class MainActivity extends Activity {
 		startEvent();
 	}
 
+    private void getDrawerOptions() {
+        //
 
-	private void startComponents() {
+        AsyncHttpClient client = new AsyncHttpClient();
+        client.get("http://api.androidhive.info/contacts/", new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                JSONArray options = null;
+                try {
+                        String response = new String(responseBody, "UTF-8");
+                        JSONObject opt_obj = new JSONObject(response);
+                        options = opt_obj.getJSONArray("contacts");
+                        setDrawerOptions(options);
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                try {
+                    String response = new String(responseBody, "UTF-8");
+                } catch (UnsupportedEncodingException e) {
+
+                }
+            }
+        });
+    }
+
+    private void setDrawerOptions(JSONArray options) throws JSONException {
+        ArrayList<String> items = new ArrayList<String>();
+        for (int i=0;i<options.length();i++) {
+            JSONObject item = (JSONObject) options.get(i);
+            items .add(item.getString("name"));
+        }
+        drawerlistadapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+        drawerlist.setAdapter(drawerlistadapter);
+    }
+
+    private void startComponents() {
         drawerlayout = (DrawerLayout) findViewById(R.id.ganzesLayout);
 
         fragment1 = (Fragment1_class) Fragment.instantiate(this, Fragment1_class.class.getName(), null);
         fragment2 = (Fragment2_class) Fragment.instantiate(this, Fragment2_class.class.getName(), null);
         fragment3 = (Fragment3_class) Fragment.instantiate(this, Fragment3_class.class.getName(), null);
-
         drawerlist = (ListView) findViewById(R.id.drawerliste);
-        ArrayAdapter<String> drawerlistadapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listentxt);
-        drawerlist.setAdapter(drawerlistadapter);
     }
 
 	private void startEvent() {
+
+
         drawertoggle = new ActionBarDrawerToggle(MainActivity.this, drawerlayout, R.drawable.ic_drawer, R.string.open, R.string.close);
         drawerlayout.setDrawerListener(drawertoggle);
 
@@ -74,6 +129,7 @@ public class MainActivity extends Activity {
         fragtrans.commit();
 
         setNavigationListeners();
+        getDrawerOptions();
     }
 
     private void setNavigationListeners() {
